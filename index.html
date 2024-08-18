@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css" /> 
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Task Management Board</title>
@@ -62,35 +63,26 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body" class="row">
+            <div class="modal-body" class="row form">
               <!-- modal forms:  -->
                <!-- task name -->
               <div class="mb-3 col-12" >
-                <label for="taskName" class="form-label"
-                  >Task Name</label>
+                <label for="taskName" class="form-label" id="taskName">Task Name</label>
                 <input
                   type="text"
                   class="form-control"
                   id="taskName"/>
                 <!-- task description -->
                 <div class="mb-3 col-12" >
-                  <label for="taskBody" class="form-label"
-                    >Descripion</label>
+                  <label for="taskBody" class="form-label" id="taskBody">Descripion</label>
                   <input
                     type="text"
                     class="form-control"
                     id="taskBody" />
                     <!-- Due Date -->
                 <div class="mb-3 col-12">
-                  <label for="date" class="col-12 col-form-label">Due Date</label>
-                  <div class="col-5">
-                    <div class="input-group date" id="datepicker">
-                      <input type="text" class="form-control" id="date"/>
-                      <span class="input-group-append">
-                        <span class="input-group-text bg-light d-block">
-                          <i class="fa fa-calendar"></i>
-                        </span>
-                      </span>
+                  <label for="date" class="col-12 col-form-label" id="taskDue">Due Date</label>
+                      <p><input type="text" class="form-control" id="datepicker"/></p>
                     </div>
                   </div>
                   </div>
@@ -111,35 +103,36 @@
           </div>
         </div>
       </div>
-      <div class="row swim-lanes text-center justify-content-between">
-        <div class="col-12 col-lg-4 d-flex">
-          <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
-              <h2 class="card-title mb-1">To Do</h2>
-            </div>
-            <div class="card-body bg-light">
-              <div id="todo-cards"></div>
-            </div>
+    </div>
+
+    <div class="row swim-lanes text-center justify-content-between">
+      <div class="col-12 col-lg-4 d-flex">
+        <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
+          <div class="card-header bg-white">
+            <h2 class="card-title mb-1">To Do</h2>
+          </div>
+          <div class="card-body bg-light">
+            <div id="todo-cards"></div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 d-flex">
-          <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
-              <h2 class="card-title mb-1">In Progress</h2>
-            </div>
-            <div class="card-body bg-light">
-              <div id="in-progress-cards"></div>
-            </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex">
+        <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
+          <div class="card-header bg-white">
+            <h2 class="card-title mb-1">In Progress</h2>
+          </div>
+          <div class="card-body bg-light">
+            <div id="in-progress-cards"></div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 d-flex">
-          <div id="done" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
-              <h2 class="card-title mb-1">Completed</h2>
-            </div>
-            <div class="card-body bg-light">
-              <div id="done-cards"></div>
-            </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex">
+        <div id="done" class="card border-light mb-3 lane flex-grow-1">
+          <div class="card-header bg-white">
+            <h2 class="card-title mb-1">Completed</h2>
+          </div>
+          <div class="card-body bg-light">
+            <div id="done-cards"></div>
           </div>
         </div>
       </div>
@@ -157,6 +150,7 @@
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
   </body>

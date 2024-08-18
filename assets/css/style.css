@@ -14,9 +14,3 @@ body {
 .task-card:hover {
   cursor: grab;
 }
-
-/* Datepicker formatting */
-.input-group-append {
-  cursor: pointer;
-}
-/*  */

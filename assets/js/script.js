@@ -2,15 +2,28 @@
 let taskList = JSON.parse(localStorage.getItem("tasks"));
 let nextId = JSON.parse(localStorage.getItem("nextId"));
 
-// datepicker js code
-$(function(){
-    $('#datepicker').datepicker();
-  });
-//   
+// define variables
+const taskForm = document.querySelector("form");
+const taskName = document.querySelector("#taskName");
+const taskBody = document.querySelector("#taskBody");
+const taskDue = document.querySelector("#taskDue");
+
+// datepicker js
+$(function () {
+    $("datepicker").datepicker();
+});
+
+// array to store created tasks (push to localStorage)
+const tasklist = [];
+
+// new task object
+const newTask = 
+
+// datepicker code
+
 
 // Todo: create a function to generate a unique task id
 function generateTaskId() {
-
 }
 
 // Todo: create a function to create a task card
